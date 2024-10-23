@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TO-DO-List</title>
+        <link rel="stylesheet" href="style.css">
+        </head>
+        <body>
+            <div class="container">
+                <h1><TO-DO-List></h1>
+                    <input type="text" id="taskinput"
+                    placeholder="enter a task">
+                    <button id ="addTaskBtn">Add Task</button>
+                    <ul id=""taskList"></ul>
+            </div>
+            <script src=""script.js"></script>
+            
+        </body>
+    
+</html>
+body{
+    font-family:arial,sans-serif;
+    text-align:center;
+}
+.container{
+    margin:20px;
+    padding:20px
+    border:1px solid#ccc;
+}
+h1{
+    margin-bottom:20px;
+
+}
+input{
+    padding:10px;
+    border:1px solid#ccc;
+
+
+}
+button{
+    padding:10px 20px;
+    background-color:#4CAF50;
+    color:white;
+    border:none;
+    cursor:pointer;
+}
+ul{
+    display:flex;
+    justify-content:space-between;
+
+}
+.task{
+    flex:1;
+}
+.delete-btn{
+    background-color: #f44336;
+    color:white;
+    padding:5px 10px;
+    cursor:pointer;
+}
+JavaScript functionality:
+const taskinput=document.getElementById("taskinput");
+const addtaskbtn=document.getElementById("taskbtn");
+
+addtaskbtn.addEventListener("click",()=>}
+const tasktext=taskinput.value;
+if (task text!==){
+    const taskitem=document.createElement("li");
+    const taskcontent=document.createElement("button");
+    
+
+
+taskcontent.classList.add("task");
+taskcontent.textcontent=tasktext;
+deletebtn.classlist.add("deletebtn");
+deletebtn.textcontent="delete";
+
+
+taskitem.appendChild(taskcontent);
+taskitem.appendChild(deletebtn);
+tasklist.appendchild(taskitem);
+
+
+taskinput.value="";
+
+deletebtn.eventlistner("click",()=>{
+    tasklist.removechild(taskitem);
+});
+}
+});
+
+
+
+    
+
